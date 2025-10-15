@@ -4,7 +4,7 @@ RTSP Overlay App — Quick README
 This repo is a small RTSP -> HLS streaming demo with overlay management (Flask + MongoDB backend, React frontend).
 
 Quick start (dev)
-- Install backend deps (create/activate venv first):
+- Install backend deps (create/activate venv first): venv\Scripts\activate 
   pip install -r backend/requirements.txt  # or: pip install flask flask-cors python-dotenv pymongo dnspython
 - Start backend (serves API and HLS files):
   python backend/app.py
@@ -61,7 +61,10 @@ Notes & data shape
   - active: boolean (manager checkbox controls visibility)
 
 Frontend usage
-- Open http://localhost:5173 (Vite dev server). The UI has:
+-   cd frontend
+-   npm run dev
+- Open http://localhost:5173 (Vite dev server).
+-   The UI has:
   - Video player (can be toggled via the manager checkbox).
   - Overlay Manager: add, edit, delete overlays and toggle active.
   - Overlay List: draggable overlays displayed on top of video when active.
@@ -71,7 +74,8 @@ Troubleshooting
 - If CORS/preflight errors appear: ensure backend is running on port 5000 and CORS config in `backend/app.py` allows `http://localhost:5173`.
 - If MongoDB errors occur: set `MONGO_URI` and `DB_NAME` environment variables or update `backend/utils/db.py`.
 
-<img width="1856" height="867" alt="image" src="https://github.com/user-attachments/assets/d7d34b96-3d0c-4042-83a5-231d3dfab11c" />
+<img width="1656" height="851" alt="image" src="https://github.com/user-attachments/assets/3971a93b-9a7b-49d0-851e-32cdd44d18c9" />
 
-<img width="1537" height="886" alt="image" src="https://github.com/user-attachments/assets/7957c059-da04-42a3-9a46-5682bef5a4e5" />
+<img width="661" height="881" alt="image" src="https://github.com/user-attachments/assets/653c6574-d4ae-46db-8da4-a981334e617f" />
+
 
