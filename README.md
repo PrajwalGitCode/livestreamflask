@@ -71,3 +71,7 @@ Troubleshooting
 - If CORS/preflight errors appear: ensure backend is running on port 5000 and CORS config in `backend/app.py` allows `http://localhost:5173`.
 - If MongoDB errors occur: set `MONGO_URI` and `DB_NAME` environment variables or update `backend/utils/db.py`.
 
+<img width="1856" height="867" alt="image" src="https://github.com/user-attachments/assets/d7d34b96-3d0c-4042-83a5-231d3dfab11c" />
+
+<img width="1537" height="886" alt="image" src="https://github.com/user-attachments/assets/7957c059-da04-42a3-9a46-5682bef5a4e5" />
+
